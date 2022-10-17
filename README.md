@@ -86,7 +86,7 @@ vault write aws/config/root \
     secret_key=xxxxxxxxxxxxxxxxxxxxx \
     region=ap-northeast-2
 ```
-- my-role에 부여할 aws-iam정책 작성
+- vault를 통해 새롭게 생성된 iam user는 my-role역할을 가지고 있음 따라서 새롭게 만들어질 iam user에 대한 aws-iam정책 작성
 ```
 vault write aws/roles/my-role \
     credential_type=iam_user \
