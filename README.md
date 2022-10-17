@@ -86,7 +86,7 @@ vault write aws/config/root \
     secret_key=xxxxxxxxxxxxxxxxxxxxx \
     region=ap-northeast-2
 ```
-- AWS 자격증명과 매핑되는 vault role구성
+- my-role에 부여할 aws-iam정책 작성
 ```
 vault write aws/roles/my-role \
     credential_type=iam_user \
